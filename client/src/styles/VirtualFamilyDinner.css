@@ -1,0 +1,83 @@
+.dinner-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #041a4b;
+  background-image: url('/family-dinner-bg.jpg'); /* use this space image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* top title block */
+.dinner-header {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dinner-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.dinner-header p {
+  margin: 0;
+  font-size: 1.02rem;
+}
+
+/* grey dialogue box */
+.dinner-dialog {
+  max-width: 760px;
+  width: 100%;
+  background: #e0e0e0;
+  color: #000000;
+  border-radius: 12px;
+  padding: 18px 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.dinner-dialog p {
+  margin: 0 0 8px 0;
+}
+
+.dinner-dialog p:last-child {
+  margin-bottom: 0;
+}
+
+/* dashed white pill button */
+.dinner-cta {
+  padding: 14px 46px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.dinner-cta:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .dinner-header {
+    padding: 0 10px;
+  }
+
+  .dinner-dialog {
+    padding: 16px 14px;
+  }
+
+  .dinner-cta {
+    width: 100%;
+    text-align: center;
+  }
+}

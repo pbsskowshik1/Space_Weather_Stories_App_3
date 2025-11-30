@@ -1,0 +1,111 @@
+.follow-grandpa-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%);
+  background-image: url('/grandpa-farm-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.follow-grandpa-content {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  width: 100%;
+}
+
+.grandpa-header {
+  background: rgba(255, 182, 193, 0.9);
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.grandpa-header h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin: 0 0 15px 0;
+  font-weight: 900;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grandpa-header p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.grandpa-problem {
+  background: rgba(100, 100, 150, 0.85);
+  border: 3px solid white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.grandpa-problem p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.grandpa-problem p:last-child {
+  margin-bottom: 0;
+}
+
+.grandpa-problem strong {
+  color: #ffffff;
+}
+
+.cta-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 16px 40px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+  color: #1a1a1a;
+  border: 3px dashed #1a1a1a;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(255, 215, 0, 0.5);
+}
+
+.cta-btn:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+  .grandpa-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .grandpa-header p,
+  .grandpa-problem p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+  }
+}

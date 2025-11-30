@@ -1,0 +1,98 @@
+.skywave-solution-bg {
+  width: 100%;
+  min-height: 100vh;
+  background: #041a4b;
+  background-image: url('/captain-solution-bg.jpg'); /* put this space image in public/ */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.skywave-solution-card {
+  max-width: 980px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.skywave-solution-top {
+  background: #ffffff;
+  padding: 18px 24px;
+  border-radius: 6px;
+  border: 3px solid #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.skywave-solution-panel {
+  background: #ffffff;
+  padding: 24px 32px;
+  border-radius: 6px;
+  border: 3px solid #000;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.landing-title {
+  text-align: center;        /* center that line */
+  font-weight: 700;
+}
+
+
+.skywave-solution-panel p {
+  margin: 0 0 10px 0;
+}
+
+.skywave-solution-panel p:last-child {
+  margin-bottom: 0;
+}
+
+.skywave-solution-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.solution-btn {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: #000000;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-transform: none;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.solution-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .skywave-solution-card {
+    gap: 18px;
+  }
+
+  .skywave-solution-top,
+  .skywave-solution-panel {
+    padding: 16px 16px;
+  }
+
+  .skywave-solution-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .solution-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

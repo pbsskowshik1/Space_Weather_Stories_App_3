@@ -1,0 +1,82 @@
+.kiran-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ff8a33;          /* bright orange like screenshot */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.kiran-card {
+  max-width: 980px;
+  width: 100%;
+  text-align: center;
+}
+
+.kiran-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 1.9rem;
+  font-weight: 900;
+}
+
+.kiran-header p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #222;
+}
+
+.kiran-alert-box {
+  margin: 50px auto 30px;
+  max-width: 780px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+  padding: 20px 26px;
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.kiran-alert-box p {
+  margin: 0 0 8px 0;
+}
+
+.kiran-alert-box p:last-child {
+  margin-bottom: 0;
+}
+
+.kiran-alert-box .label {
+  color: #e53935;
+  font-weight: 700;
+}
+
+.kiran-cta {
+  margin-top: 20px;
+  padding: 16px 48px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: #041a4b;          /* dark navy like other buttons */
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.kiran-cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .kiran-alert-box {
+    padding: 18px 14px;
+  }
+
+  .kiran-cta {
+    width: 100%;
+  }
+}

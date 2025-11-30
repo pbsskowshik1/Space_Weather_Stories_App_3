@@ -1,0 +1,87 @@
+/* src/styles/SunnySneeze.css */
+
+.sunny-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+  gap: 26px;
+}
+
+.sunny-top-card {
+  max-width: 760px;
+  width: 100%;
+  background: #132855;
+  border-radius: 24px;
+  padding: 18px 24px;
+  text-align: center;
+}
+
+.sunny-top-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.sunny-top-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.sunny-help-btn {
+  padding: 14px 36px;
+  border-radius: 999px;
+  border: 4px dashed #000000;
+  background: #ff8a33;
+  color: #000000;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.sunny-alert-card {
+  max-width: 760px;
+  width: 100%;
+  background: #d45aa5;
+  border-radius: 18px;
+  padding: 18px 24px;
+  text-align: center;
+}
+
+.sunny-alert-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.sunny-alert-card p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.sunny-earth-btn {
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: #041a4b;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.sunny-help-btn:hover,
+.sunny-earth-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .sunny-top-card,
+  .sunny-alert-card {
+    width: 100%;
+  }
+}

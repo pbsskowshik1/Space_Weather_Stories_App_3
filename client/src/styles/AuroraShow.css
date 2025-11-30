@@ -1,0 +1,79 @@
+/* src/styles/AuroraShow.css */
+
+.aurora-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000;
+  background-image: url('/aurora-ending-bg.jpg'); /* export this image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.aurora-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.aurora-header h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+
+.aurora-main-text {
+  max-width: 900px;
+  width: 100%;
+  background: #e0e0e0;
+  color: #000000;
+  border-radius: 12px;
+  padding: 18px 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.aurora-main-text p {
+  margin: 0 0 8px 0;
+}
+
+.aurora-main-text p:last-child {
+  margin-bottom: 0;
+}
+
+.aurora-bottom-text {
+  max-width: 900px;
+  text-align: center;
+  margin: 0 0 28px 0;
+  font-size: 1rem;
+}
+
+.aurora-btn {
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.aurora-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .aurora-main-text {
+    padding: 16px 14px;
+  }
+
+  .aurora-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

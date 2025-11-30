@@ -1,0 +1,93 @@
+.story-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.story-layout {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.story-map {
+  max-width: 520px;
+  width: 50%;
+  height: auto;
+}
+
+.story-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.speech-bubble {
+  max-width: 520px;
+  background: #000000;
+  color: #ff8800;
+  padding: 22px 26px;
+  border-radius: 26px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.speech-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 60%;
+  width: 38px;
+  height: 18px;
+  background: #000000;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.story-character {
+  max-height: 260px;
+  width: auto;
+}
+
+.story-next-btn {
+  margin-top: 30px;
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: none;
+  background: #041a4b;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.story-next-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .story-layout {
+    flex-direction: column;
+  }
+
+  .story-map {
+    width: 80%;
+  }
+
+  .speech-bubble {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,101 @@
+.story-next-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+  box-sizing: border-box;
+}
+
+/* navy card with yellow dashed border */
+.family-card {
+  max-width: 760px;
+  width: 100%;
+  background: #132855;
+  padding: 18px 24px 22px;
+  text-align: center;
+  border-radius: 8px;
+  border: 6px dashed #ffd54f;
+  margin-bottom: 28px;
+}
+
+.family-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.family-card p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+/* family member blocks */
+.family-list {
+  max-width: 760px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.family-item {
+  padding: 14px 20px 10px;
+  border-radius: 14px;
+  border: 6px dashed #ffd54f;
+  text-align: center;
+}
+
+.family-title {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.family-subtitle {
+  font-size: 0.95rem;
+}
+
+/* different fill colors like screenshot */
+.family-item--green {
+  background: #00c853;
+}
+
+.family-item--blue {
+  background: #ffca28;
+}
+
+.family-item--black {
+  background: #ffca28;
+}
+
+.family-item--white {
+  background: #ffca28;
+}
+
+/* bottom pill button */
+.story-next-btn2 {
+  margin-top: 10px;
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: #041a4b;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.story-next-btn2:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .family-card,
+  .family-list {
+    width: 100%;
+  }
+}

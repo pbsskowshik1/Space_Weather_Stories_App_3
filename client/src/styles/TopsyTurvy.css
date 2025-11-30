@@ -1,0 +1,111 @@
+/* src/styles/TopsyTurvy.css */
+
+.topsy-site {
+  min-height: 100vh;
+  width: 100%;
+  background: #132855;                 /* full-page navy */
+  box-sizing: border-box;
+  padding: 80px 20px 40px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* optional yellow dashed border around whole viewport look */
+body {
+  margin: 0;
+}
+
+.topsy-site::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  border: 6px dashed #ffcc33;
+  box-sizing: border-box;
+}
+
+.topsy-site-header {
+  text-align: center;
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.topsy-site-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.topsy-site-header p {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #e0e0e0;
+}
+
+.topsy-site-buttons {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.topsy-btn {
+  width: 100%;
+  padding: 18px 24px;
+  border-radius: 999px;
+  border: 4px dashed #ffffff;
+  font-size: 1.05rem;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* button colors */
+.topsy-btn--red {
+  background: #ff2f6f;
+  color: #000000;
+}
+
+.topsy-btn--white {
+  background: #ffffff;
+  color: #1b3767;
+  border-color: #1b3767;
+}
+
+.topsy-btn--yellow {
+  background: #ffd54f;
+  color: #000000;
+}
+
+.topsy-btn--orange {
+  background: #ff8a33;
+  color: #ffffff;
+}
+
+.topsy-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  .topsy-site {
+    padding: 60px 12px 32px;
+  }
+
+  .topsy-site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .topsy-btn {
+    font-size: 0.95rem;
+    padding: 14px 16px;
+  }
+}

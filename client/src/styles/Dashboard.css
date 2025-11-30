@@ -1,0 +1,131 @@
+.dashboard-container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1a3e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Animated background effect */
+.dashboard-container::before {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 255, 255, 0.05) 10px,
+    rgba(0, 255, 255, 0.05) 20px
+  );
+  animation: move 20s linear infinite;
+}
+
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50px, 50px);
+  }
+}
+
+
+.space-adventure {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.space-adventure h1 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin: 0 0 10px 0;
+  text-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+  letter-spacing: 2px;
+}
+
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #aaa;
+}
+
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  max-width: 300px;
+}
+
+
+.btn {
+  padding: 18px 60px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: 3px solid #ffd700;
+  border-radius: 50px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.yes-btn {
+  border-color: #ffd700;
+  color: #ffd700;
+}
+
+
+.yes-btn:hover {
+  background: #ffd700;
+  color: #0a0e27;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  transform: scale(1.05);
+}
+
+
+.no-btn {
+  border-color: #ff6b6b;
+  color: #ff6b6b;
+}
+
+
+.no-btn:hover {
+  background: #ff6b6b;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.6);
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .space-adventure h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    padding: 15px 40px;
+    font-size: 1rem;
+  }
+}

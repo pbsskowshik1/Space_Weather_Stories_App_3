@@ -1,0 +1,95 @@
+.kiran-sol-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #041a4b;
+  background-image: url('/kiran-solution-bg.jpg'); /* use the space image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 50px;
+  box-sizing: border-box;
+}
+
+/* orange top bar */
+.kiran-sol-top {
+  max-width: 960px;
+  width: 100%;
+  background: #ff8a33;
+  border-radius: 14px;
+  border: 3px solid #ffffff;
+  padding: 16px 22px;
+  margin-bottom: 20px;
+}
+
+.kiran-sol-top h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.kiran-sol-top p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+/* main orange panel */
+.kiran-sol-panel {
+  max-width: 960px;
+  width: 100%;
+  background: #ff8a33;
+  border-radius: 14px;
+  border: 3px solid #ffffff;
+  padding: 22px 26px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.kiran-sol-panel p {
+  margin: 0 0 10px 0;
+}
+
+.kiran-sol-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* bottom buttons */
+.kiran-sol-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.kiran-sol-btn {
+  padding: 14px 34px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+}
+
+.kiran-sol-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .kiran-sol-top,
+  .kiran-sol-panel {
+    padding: 18px 14px;
+  }
+
+  .kiran-sol-buttons {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .kiran-sol-btn {
+    width: 100%;
+    text-align: center;
+  }
+}

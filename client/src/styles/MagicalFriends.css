@@ -1,0 +1,90 @@
+.mf-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #4a4a4a;             /* dark grey with stars image if you like */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.mf-title-card {
+  max-width: 760px;
+  width: 100%;
+  background: #132855;
+  padding: 16px 20px;
+  text-align: center;
+  border-radius: 8px;
+  border: 4px dashed #ff8a33;
+  font-weight: 900;
+  font-size: 1.3rem;
+  margin-bottom: 28px;
+}
+
+/* friends list */
+.mf-list {
+  max-width: 760px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+
+.mf-item {
+  padding: 14px 20px 10px;
+  border-radius: 14px;
+  border: 4px dashed #ffffff;
+  text-align: center;
+}
+
+.mf-name {
+  font-weight: 900;
+  font-size: 1.15rem;
+}
+
+.mf-desc {
+  font-size: 0.95rem;
+}
+
+/* colors per card */
+.mf-item--sunny {
+  background: #ff8a33;
+  border-color: #00c853;   /* green dashes */
+}
+
+.mf-item--maggie {
+  background: #ffffff;
+  color: #000000;
+  border-color: #000000;
+}
+
+.mf-item--aurora {
+  background: #ff2f92;
+  border-color: #ffffff;
+}
+
+/* bottom pill button */
+.mf-start-btn {
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: #041a4b;
+  color: #ffffff;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.mf-start-btn:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .mf-title-card,
+  .mf-list {
+    width: 100%;
+  }
+}

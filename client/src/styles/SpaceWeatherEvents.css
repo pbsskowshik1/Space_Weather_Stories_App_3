@@ -1,0 +1,81 @@
+.events-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #041a4b;
+  background-image: url('/space-events-bg.jpg'); /* use this starry image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 50px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.events-header {
+  max-width: 900px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.events-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+/* info cards */
+.events-card {
+  max-width: 900px;
+  width: 100%;
+  background: #5f73a8;
+  border-radius: 14px;
+  border: 3px solid #ffffff;
+  padding: 18px 26px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.events-card--purple {
+  background: #7b65b9;
+}
+
+.events-card h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.events-card p {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+/* bottom button */
+.events-cta {
+  margin-top: 20px;
+  padding: 14px 40px;
+  border-radius: 999px;
+  border: 3px dashed #ffffff;
+  background: transparent;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
+.events-cta:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .events-card {
+    padding: 16px 14px;
+  }
+
+  .events-cta {
+    width: 100%;
+    text-align: center;
+  }
+}
